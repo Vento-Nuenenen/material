@@ -1,0 +1,20 @@
+### PHPSTORM BOOGERS ###
+.DS_Store
+
+### PHPSTORM BOOGERS ###
+.idea/*
+/.idea/*
+
+### DIFFERENT TYPE OF MASTER CONFIGS ###
+.env
+
+### ASSET EXCLUSIONS ###
+/node_modules
+/vendor
+storage/debugbar/*
+storage/framework/*
+storage/logs/*
+storage/users/*
+storage/notfallblatt/*
+npm-debug.log
+yarn-error.log
