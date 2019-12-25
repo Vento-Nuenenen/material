@@ -8,20 +8,20 @@
     "packages": [
         {
             "name": "codedge/laravel-fpdf",
-            "version": "1.3.1",
+            "version": "1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/codedge/laravel-fpdf.git",
-                "reference": "fba7c26f072c4bae7e318c335932807c7e200c24"
+                "reference": "6596b7be2de7f143abbe1de6472bbb5a8d22672f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codedge/laravel-fpdf/zipball/fba7c26f072c4bae7e318c335932807c7e200c24",
-                "reference": "fba7c26f072c4bae7e318c335932807c7e200c24",
+                "url": "https://api.github.com/repos/codedge/laravel-fpdf/zipball/6596b7be2de7f143abbe1de6472bbb5a8d22672f",
+                "reference": "6596b7be2de7f143abbe1de6472bbb5a8d22672f",
                 "shasum": ""
             },
             "require": {
-                "illuminate/support": "5.*",
+                "illuminate/support": "5.*|6.*",
                 "php": ">=5.4.0"
             },
             "type": "library",
@@ -56,7 +56,7 @@
                 "laravel",
                 "pdf"
             ],
-            "time": "2019-04-06T07:04:05+00:00"
+            "time": "2019-09-19T19:00:05+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
