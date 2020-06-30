@@ -17,3 +17,4 @@ Route::redirect('/', '/overwatch', 301);
 
 Auth::routes(['register' => false]);
 
+Route::get('/home', 'HomeController@index')->name('home');
