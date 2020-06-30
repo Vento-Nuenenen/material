@@ -1,57 +1,85 @@
-#### Excalibour is a Build of Laravel 5.5 Exer-Management-Tool for Scouts.
+<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
-[![Build Status](https://travis-ci.org/Chronyms/Excalibour.svg?branch=release)](https://travis-ci.org/Chronyms/Excalibour)
-[![StyleCI](https://github.styleci.io/repos/116980577/shield?branch=release)](https://github.styleci.io/repos/116980577)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Chronyms/Excalibour/badges/quality-score.png?b=V3)](https://scrutinizer-ci.com/g/Chronyms/Excalibour/?branch=V3)
-[![Build Status](https://scrutinizer-ci.com/g/Chronyms/Excalibour/badges/build.png?b=V3)](https://scrutinizer-ci.com/g/Chronyms/Excalibour/build-status/V3)
+<p align="center">
+<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
+</p>
 
-### Installation Instructions
-1. `git clone https://github.com/Chronyms/Excalibour.git` ausführen
-2. MySQL-Datenbank für das Projekt erstellen
-    * ```mysql -u root -p```, auf Vagrant: ```mysql -u homestead -psecret```
-    * ```create database excalibour;```
-    * ```\q```
-3. From the projects root run `cp .env.example .env`
-4. Configure your `.env` file
-5. Run `composer update` from the projects root folder
-6. From the projects root folder run `php artisan key:generate`
-7. From the projects root folder run `php artisan migrate`
-8. From the projects root folder run `composer dump-autoload`
-9. From the projects root folder run `php artisan db:seed`
+## About Laravel
 
-** Note ** In order for [Dropzone.js](http://www.dropzonejs.com/#configuration) to work you will need to run
-```
-yarn
-```
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-#### Rebuild Front End Assets with Mix
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-###### Rebuilding the front end of that project is OPTIONAL and can be done using Laravel [Mix](https://laravel.com/docs/5.5/mix) which is Elixers replacement.
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-1. From the projects root folder run `yarn`
-2. From the projects root folder run `yarn dev` or `yarn production`
-  * You can watch assets with `yarn run watch`
+## Learning Laravel
 
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-### Seeds
-1. Seeded Roles
-  * Unverified - Level 0
-  * User  - Level 1
-  * Administrator - Level 5
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-2. Seeded Permissions
-  * view.users
-  * create.users
-  * edit.users
-  * delete.users
+## Laravel Sponsors
 
-3. Seeded Users
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-|Email|Password|Access|
-|:------------|:------------|:------------|
-|user@user.com|password|User Access|
-|admin@admin.com|password|Admin Access|
+### Premium Partners
 
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Cubet Techno Labs](https://cubettech.com)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[Many](https://www.many.co.uk)**
+- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
+- **[DevSquad](https://devsquad.com)**
 
-### Laravel Auth License
-Laravel-auth is licensed under the MIT license. Enjoy!
+### Community Sponsors
+
+<a href="https://op.gg"><img src="http://opgg-static.akamaized.net/icon/t.rectangle.png" width="150"></a>
+
+- [UserInsights](https://userinsights.com)
+- [Fragrantica](https://www.fragrantica.com)
+- [SOFTonSOFA](https://softonsofa.com/)
+- [User10](https://user10.com)
+- [Soumettre.fr](https://soumettre.fr/)
+- [CodeBrisk](https://codebrisk.com)
+- [1Forge](https://1forge.com)
+- [TECPRESSO](https://tecpresso.co.jp/)
+- [Runtime Converter](http://runtimeconverter.com/)
+- [WebL'Agence](https://weblagence.com/)
+- [Invoice Ninja](https://www.invoiceninja.com)
+- [iMi digital](https://www.imi-digital.de/)
+- [Earthlink](https://www.earthlink.ro/)
+- [Steadfast Collective](https://steadfastcollective.com/)
+- [We Are The Robots Inc.](https://watr.mx/)
+- [Understand.io](https://www.understand.io/)
+- [Abdel Elrafa](https://abdelelrafa.com)
+- [Hyper Host](https://hyper.host)
+- [Appoly](https://www.appoly.co.uk)
+- [云软科技](http://www.yunruan.ltd/)
+
+## Contributing
+
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+
+## Code of Conduct
+
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+
+## Security Vulnerabilities
+
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
