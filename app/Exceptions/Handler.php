@@ -3,6 +3,7 @@
 namespace App\Exceptions;
 
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Illuminate\Support\Facades\App;
 use Throwable;
 
 class Handler extends ExceptionHandler
@@ -36,6 +37,13 @@ class Handler extends ExceptionHandler
      */
     public function report(Throwable $exception)
     {
+        if(App::environment('production')){
+            if ($this->shouldReport($exception)) {
+                $airbrakeNotifier = \App::make('Airbrake\Notifier');
+                $airbrakeNotifier->notify($exception);
+            }
+        }
+
         parent::report($exception);
     }
 
