@@ -1,8 +1,15 @@
-# Created by https://www.toptal.com/developers/gitignore/api/node,macos,laravel,phpstorm+all
-# Edit at https://www.toptal.com/developers/gitignore?templates=node,macos,laravel,phpstorm+all
+# Created by https://www.toptal.com/developers/gitignore/api/node,macos,laravel,phpstorm+all,windows,composer
+# Edit at https://www.toptal.com/developers/gitignore?templates=node,macos,laravel,phpstorm+all,windows,composer
+
+### Composer ###
+composer.phar
+/vendor/
+
+# Commit your application's lock file https://getcomposer.org/doc/01-basic-usage.md#commit-your-composer-lock-file-to-version-control
+# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
+# composer.lock
 
 ### Laravel ###
-/vendor/
 node_modules/
 npm-debug.log
 yarn-error.log
@@ -25,6 +32,10 @@ Homestead.yaml
 Homestead.json
 /.vagrant
 .phpunit.result.cache
+
+# Laravel IDE helper
+*.meta.*
+_ide_*
 
 ### macOS ###
 # General
@@ -250,4 +261,30 @@ modules.xml
 # Sonarlint plugin
 .idea/sonarlint
 
-# End of https://www.toptal.com/developers/gitignore/api/node,macos,laravel,phpstorm+all
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# End of https://www.toptal.com/developers/gitignore/api/node,macos,laravel,phpstorm+all,windows,composer
