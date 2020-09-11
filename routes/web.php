@@ -17,8 +17,7 @@ Route::redirect('/', '/overwatch', 301);
 
 Auth::routes(['register' => false]);
 
-Route::middleware('auth')->prefix('admin')->group(function () {
-    Route::get('/overwatch', 'OverwatchController@index')->name('overwatch');
+Route::middleware('auth')->prefix('admin')->group(function(){
+    Route::get('/overwatch', 'HomeController@index')->name('home');
 
-    Route::resource('photos', 'PhotoController');
 });
