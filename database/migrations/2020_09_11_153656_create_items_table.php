@@ -17,7 +17,9 @@ class CreateItemsTable extends Migration
             $table->id();
             $table->string('name');
             $table->integer('quantity');
+            $table->integer('pack_quantity');
             $table->foreignId('category_id');
+            $table->foreignId('group_id');
             $table->timestamps();
         });
     }
