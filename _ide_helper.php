@@ -3,7 +3,7 @@
 
 /**
  * A helper file for Laravel, to provide autocomplete information to your IDE
- * Generated for Laravel 8.0.3.
+ * Generated for Laravel 8.3.0.
  *
  * This file should not be included in your code, only analyzed by your IDE!
  *
@@ -6701,6 +6701,8 @@
             /**
      * 
      *
+     * @method static void write(string $level, string $message, array $context = [])
+     * @method static void listen(\Closure $callback)
      * @see \Illuminate\Log\Logger
      */ 
         class Log {
@@ -6934,6 +6936,10 @@
             /**
      * 
      *
+     * @method static mixed laterOn(string $queue, \DateTimeInterface|\DateInterval|int $delay, \Illuminate\Contracts\Mail\Mailable|string|array $view)
+     * @method static mixed queueOn(string $queue, \Illuminate\Contracts\Mail\Mailable|string|array $view)
+     * @method static void plain(string $view, array $data, $callback)
+     * @method static void html(string $html, $callback)
      * @see \Illuminate\Mail\Mailer
      * @see \Illuminate\Support\Testing\Fakes\MailFake
      */ 
@@ -17974,7 +17980,7 @@ namespace  {
                 /**
              * Add a where between statement to the query.
              *
-             * @param string $column
+             * @param string|\Illuminate\Database\Query\Expression $column
              * @param array $values
              * @param string $boolean
              * @param bool $not
