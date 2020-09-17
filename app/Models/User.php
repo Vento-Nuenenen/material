@@ -17,7 +17,14 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'scout_name',
+        'first_name',
+        'last_name',
+        'email',
+        'password',
+
+        'group_id',
+        'role_id',
     ];
 
     /**
@@ -37,4 +44,12 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function group(){
+        return $this->hasOne('App\Models\Group');
+    }
+
+    public function role(){
+        return $this->hasOne('App\Models\Role');
+    }
 }
