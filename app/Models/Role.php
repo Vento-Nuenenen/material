@@ -14,7 +14,6 @@ class Role extends Model
     protected $fillable = [
         'name',
         'slug',
-        'protected',
     ];
 
     public function group(){

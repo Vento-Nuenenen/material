@@ -17,7 +17,6 @@ class CreateRolesTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('slug')->unique();
-            $table->boolean('protected')->default(false);
             $table->timestamps();
         });
     }

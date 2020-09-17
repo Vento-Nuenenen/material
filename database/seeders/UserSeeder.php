@@ -2,6 +2,8 @@
 
 namespace Database\Seeders;
 
+use App\Models\Group;
+use App\Models\Role;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
@@ -15,6 +17,10 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
+        $adminRole = Role::where('slug', '=', 'admin')->first();
+        $alRole = Role::where('slug', '=', 'al')->first();
+        $nueneneGroup = Group::where('slug', '=', 'nuenenen')->first();
+
         // Seed test admin
         $seededAdminEmail = 'admin@mat.ch';
         $user = User::where('email', '=', $seededAdminEmail)->first();
@@ -25,6 +31,9 @@ class UserSeeder extends Seeder
                 'last_name' => 'Admin',
                 'email' => $seededAdminEmail,
                 'password' => Hash::make('password'),
+
+                'group_id' => null,
+                'role_id' => $adminRole,
             ]);
             $user->save();
         }
@@ -39,6 +48,9 @@ class UserSeeder extends Seeder
                 'last_name'                      => 'Brenneisen',
                 'email'                          => $seededUserEmail,
                 'password'                       => Hash::make('password'),
+
+                'group_id' => null,
+                'role_id' => $adminRole,
             ]);
             $user->save();
         }
