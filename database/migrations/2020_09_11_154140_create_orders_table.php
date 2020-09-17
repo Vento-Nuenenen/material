@@ -18,7 +18,7 @@ class CreateOrdersTable extends Migration
             $table->string('name');
             $table->date('provision_date');
             $table->date('return_date');
-            $table->foreignId('group_id');
+            $table->foreignId('group_id')->nullable();
             $table->timestamps();
         });
     }

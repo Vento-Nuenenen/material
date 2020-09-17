@@ -24,8 +24,8 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->timestamps();
 
-            $table->foreignId('group_id');
-            $table->foreignId('role_id');
+            $table->foreignId('group_id')->nullable();
+            $table->foreignId('role_id')->nullable();
         });
     }
 
