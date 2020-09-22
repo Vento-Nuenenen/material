@@ -19,7 +19,6 @@ class UserSeeder extends Seeder
     {
         $adminRole = Role::where('slug', '=', 'admin')->first();
         $alRole = Role::where('slug', '=', 'al')->first();
-        $nueneneGroup = Group::where('slug', '=', 'nuenenen')->first();
 
         // Seed test admin
         $seededAdminEmail = 'admin@mat.ch';
@@ -33,7 +32,7 @@ class UserSeeder extends Seeder
                 'password' => Hash::make('password'),
 
                 'group_id' => null,
-                'role_id' => $adminRole,
+                'role_id' => $adminRole->id,
             ]);
             $user->save();
         }
@@ -50,7 +49,7 @@ class UserSeeder extends Seeder
                 'password'                       => Hash::make('password'),
 
                 'group_id' => null,
-                'role_id' => $adminRole,
+                'role_id' => $alRole->id,
             ]);
             $user->save();
         }
