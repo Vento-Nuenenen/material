@@ -1,7 +1,7 @@
 <?php
 
+use App\Http\Controllers\OverwatchController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,7 +19,7 @@ Route::redirect('/', '/overwatch', 301);
 Auth::routes();
 
 Route::group(['middleware' => ['auth']], function(){
-    Route::get('/overwatch', 'OverwatchController@index')->name('overwatch');
+    Route::get('/overwatch', [OverwatchController::class, 'index'])->name('overwatch');
 
     Route::any('/users', 'UsersController@index')->name('users');
     Route::get('/users/add', 'UsersController@create')->name('add-users');
