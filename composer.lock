@@ -8,22 +8,22 @@
     "packages": [
         {
             "name": "appstract/laravel-opcache",
-            "version": "4.0.1",
+            "version": "4.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/appstract/laravel-opcache.git",
-                "reference": "414f2f0f26e254f70126723b1462a25cb913448b"
+                "reference": "d2ce88cddda6af54c14d1f9ceaaf94b54f38f9d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/appstract/laravel-opcache/zipball/414f2f0f26e254f70126723b1462a25cb913448b",
-                "reference": "414f2f0f26e254f70126723b1462a25cb913448b",
+                "url": "https://api.github.com/repos/appstract/laravel-opcache/zipball/d2ce88cddda6af54c14d1f9ceaaf94b54f38f9d3",
+                "reference": "d2ce88cddda6af54c14d1f9ceaaf94b54f38f9d3",
                 "shasum": ""
             },
             "require": {
                 "guzzlehttp/guzzle": "^6.3.1|^7.0",
                 "laravel/framework": ">=7.0",
-                "php": "^7.2.5"
+                "php": ">=7.2.5"
             },
             "require-dev": {
                 "orchestra/testbench": "^5.0",
@@ -62,7 +62,7 @@
                 "laravel",
                 "php"
             ],
-            "time": "2020-08-13T08:00:24+00:00"
+            "time": "2020-12-01T16:12:14+00:00"
         },
         {
             "name": "asm89/stack-cors",
