@@ -15,7 +15,7 @@
         "bootstrap-select": "1.13.18",
         "bootstrap4-toggle": "3.6.1",
         "cross-env": "7.0.3",
-        "dropzone": "5.7.6",
+        "dropzone": "5.8.0",
         "font-awesome": "4.7.0",
         "jquery": "3.5.1",
         "laravel-mix": "6.0.13",
