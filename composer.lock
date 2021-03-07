@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f6a05619d7f200dcf797c2f6ce90cd31",
+    "content-hash": "ff91d61b5669326da369bb823459f0da",
     "packages": [
         {
             "name": "appstract/laravel-opcache",
@@ -956,16 +956,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v8.29.0",
+            "version": "v8.31.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "d2eba352b3b3a3c515b18c5726b373fe5026733e"
+                "reference": "2aa5c2488d25178ebc097052c7897a0e463ddc35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/d2eba352b3b3a3c515b18c5726b373fe5026733e",
-                "reference": "d2eba352b3b3a3c515b18c5726b373fe5026733e",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/2aa5c2488d25178ebc097052c7897a0e463ddc35",
+                "reference": "2aa5c2488d25178ebc097052c7897a0e463ddc35",
                 "shasum": ""
             },
             "require": {
@@ -1120,7 +1120,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2021-02-23T14:27:41+00:00"
+            "time": "2021-03-04T15:22:36+00:00"
         },
         {
             "name": "laravel/tinker",
