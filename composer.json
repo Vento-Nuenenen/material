@@ -7,7 +7,7 @@
         "laravel"
     ],
     "require": {
-        "php": "^7.3",
+        "php": "^7.3 || ^8.0",
         "appstract/laravel-opcache": "4.0.2",
         "fideloper/proxy": "4.4.1",
         "fruitcake/laravel-cors": "2.0.3",
